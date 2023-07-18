@@ -1,0 +1,89 @@
+/* === XX Large Device === */
+@media only screen and (min-width:1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+@media only screen and (min-width:1600px){
+    .container{
+        max-width: 1440px;
+    }
+}
+/* === X Large Device === */
+@media only screen and (max-width:1400px){
+    .container{
+        max-width: 1140px;
+    }
+}
+@media only screen and (max-width:1200px){
+   .container{
+        max-width: 1024px;
+   }
+}
+/* === Large Device === */
+@media only screen and (max-width:1080px){
+    .container{
+        max-width: 960px;
+    }
+}
+/* === Medium Device === */
+@media only screen and (max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+    title, .logo {
+        font-size: 3.5rem;
+        gap: 1rem;
+    }
+    .header-area nav.menu ul {
+        gap: 1.5rem;
+    }
+    .header-area nav.menu {
+        gap: 2rem;
+    }
+    .header-area nav.menu .follow {
+        padding: 1.2rem;
+    }
+    .header-area nav.menu .follow span, .header-area nav.menu ul li a {
+        font-size: 1.6rem;
+    }
+    .header-area nav.menu .follow span {
+        margin-right: 1.5rem;
+    }
+    .header-area nav.menu .follow a:last-child {
+        margin-left: 1rem;
+    }
+}
+/* === Small Device === */
+@media only screen and (max-width:768px){}
+@media only screen and (max-width:767px){
+    .container{
+        max-width: 540px;
+    }
+    header.header-section {
+        box-shadow: none;
+    }
+    .header-area {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .header-area nav.menu {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .header-area nav.menu ul {
+        gap: 2.5rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-area nav.menu .follow span, .header-area nav.menu ul li a {
+        font-size: 1.8rem;
+    }
+}
+/* === Extra Small Device === */
+@media only screen and (max-width:576px){
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
