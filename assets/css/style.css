@@ -154,11 +154,12 @@ header.header-section {
 }
 /* === Header Section Css Area End === */
 
-/* === Header Section Css Area Start === */
+/* === Banner Section Css Area Start === */
 section.banner-section {
     width: 100%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 section.banner-section::after{
     content: "";
@@ -193,6 +194,9 @@ section.banner-section::after{
     flex-direction: column;
     gap: 1.7rem;
 }
+.banner-text-left{
+    padding-bottom: 1rem;
+}
 .banner-area ul.game-feature-list li {
     display: flex;
     gap: 1.5rem;
@@ -200,7 +204,7 @@ section.banner-section::after{
     font-size: 2rem;
     font-weight: 500;
 }
-/* === Header Section Css Area End === */
+/* === Banner Section Css Area End === */
 
 /* === Funny Section Css Area Start === */
 .funny-section {
@@ -270,6 +274,98 @@ section.banner-section::after{
 }
 /* === Funny Section Css Area End === */
 
+/* === Gamer Section Css Area Start === */
+section.gamer-section {
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 5rem 0;
+}
+.gamer-area {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+.gamer-area .gamer-left-img {
+    flex-basis: 60%;
+}
+.gamer-area .gamer-left-img img{
+   width: 100%;
+}
+.gamer-area .gamer-right-text {
+    flex-basis: 40%;
+    text-align: right;
+}
+.gamer-area .gamer-right-text p {
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.gamer-area .gamer-right-text .message p {
+    color: var(--secondary-color);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+}
+.gamer-area .gamer-right-text .message p span{
+    font-weight: 500;
+    display: block;
+}
+/* === Gamer Section Css Area End === */
+
+/* === Career Section Css Area Start === */
+.career-section {
+    width: 100%;
+    background: var(--linear-logo-color);
+    position: relative;
+}
+.career-section .career-right-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
+.career-section .career-right-img img{
+    height: 100%;
+}
+.career-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.career-area .career-left-text{
+    flex-basis: 50%;
+}
+
+.career-area .career-left-text h2 ,
+.career-area .career-left-text p ,
+.career-area .career-left-text ul li{
+    -webkit-text-fill-color: var(--white-color);
+}
+.career-area .career-left-text p{
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
+}
+.career-area .career-left-text ul li {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.career-area .career-left-text ul li:last-child {
+    margin-bottom: 0rem;
+}
+.career-area .career-left-text ul li span:last-child{
+    text-align: right;
+}
+.career-area .career-left-text a.btn {
+    background: #fff;
+    color: #FF42A5;
+    margin-top: 4rem;
+}
+/* === Career Section Css Area End === */
 
 
 

@@ -19,6 +19,9 @@
    .container{
         max-width: 1024px;
    }
+   .career-area .career-left-text ul li {
+        font-size: 1.6rem;
+    }
 }
 /* === Large Device === */
 @media only screen and (max-width:1080px){
@@ -29,6 +32,27 @@
         font-size: 1.6rem;
         line-height: 2rem;
         margin-top: 2rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
+    .gamer-area .gamer-left-img {
+        flex-basis: 60%;
+    }
+    .gamer-area .gamer-right-text {
+        flex-basis: 40%;
+    }
+    .gamer-area .gamer-right-text p {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+    .gamer-area .gamer-right-text .message p {
+        font-size: 1.8rem;
+        line-height: 3.5rem;
     }
 }
 /* === Medium Device === */
@@ -88,6 +112,25 @@
     .funny-area .funny-card {
         flex-basis: 47%;
     }
+    .gamer-area {
+        flex-direction: column;
+    }
+    .gamer-area .gamer-right-text {
+        width: 100%;
+        text-align: center;
+    }
+    .career-section .career-right-img {
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+    }
+    .career-area .career-left-text {
+        flex-basis: 100%;
+    }
+    .career-section {
+        padding-bottom: 12rem;
+    }
+
 }
 /* === Small Device === */
 @media only screen and (max-width:768px){}
@@ -154,6 +197,7 @@
         width: 80%;
         margin: 0 auto;
     }
+
 }
 /* === Extra Small Device === */
 @media only screen and (max-width:576px){
@@ -164,5 +208,13 @@
     .banner-img {
         display: flex;
         gap: 2rem;
+    }
+    .career-area .career-left-text ul li {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width:380px){
+    .career-area .career-left-text ul li {
+        font-size: 1rem;
     }
 }
