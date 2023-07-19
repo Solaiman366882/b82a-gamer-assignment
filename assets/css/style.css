@@ -273,6 +273,37 @@ section.banner-section::after{
 }
 /* === Funny Section Css Area End === */
 
+/* === Play Instantly Section Css Area Start === */
+.play-instant-section {
+    width: 100%;
+}
+.play-instant-area {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.play-instant-area .right-img {
+    position: relative;
+}
+.play-instant-area .right-img img.img-2 {
+    position: absolute;
+    bottom: -50px;
+    left: -104px;
+    width: 275px;
+}
+.play-instant-area .right-img img.img-1 {
+    min-width: 635px;
+}
+.left-text {
+    text-align: right;
+    padding-right: 12rem;
+}
+.left-text p{
+    margin-top: 2.5rem;
+}
+/* === Play Instantly Section Css Area End === */
+
 /* === Gamer Section Css Area Start === */
 section.gamer-section {
     width: 100%;
