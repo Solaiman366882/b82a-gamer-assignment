@@ -53,10 +53,28 @@
     .header-area nav.menu .follow a:last-child {
         margin-left: 1rem;
     }
+    h3 {
+        font-size: 3rem;
+    }
+    h1 {
+        font-size: 5.8rem;
+    }
+    .banner-area ul.game-feature-list li {
+        font-size: 1.6rem;
+    }
+    .secondary-btn, .btn {
+        font-size: 1.6rem;
+        padding: 1.5rem 3rem;
+    }
+    .banner-area ul.game-feature-list {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        gap: 1.2rem;
+    }
 }
 /* === Small Device === */
 @media only screen and (max-width:768px){}
-@media only screen and (max-width:767px){
+@media only screen and (max-width:760px){
     .container{
         max-width: 540px;
     }
@@ -79,11 +97,34 @@
     .header-area nav.menu .follow span, .header-area nav.menu ul li a {
         font-size: 1.8rem;
     }
+    .banner-area {
+
+        flex-direction: column;
+    }
+    .banner-text-left {
+        order: 1;
+        position: relative;
+        z-index: 1;
+        min-height: 700px;
+    }
+    section.banner-section::after {
+        width: 42rem;
+        height: 48rem;
+        left: 50%;
+        background-size: contain;
+        bottom: 310px;
+        transform: translateX(-50%);
+        top: unset;
+    }
 }
 /* === Extra Small Device === */
 @media only screen and (max-width:576px){
     .container{
         max-width: 100%;
         padding: 0 15px;
+    }
+    .banner-img {
+        display: flex;
+        gap: 2rem;
     }
 }

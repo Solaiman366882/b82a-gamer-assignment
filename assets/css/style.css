@@ -39,6 +39,15 @@ h2{
 }
 h2 span{
     color: var(--secondary-color);
+    -webkit-text-fill-color: var(--secondary-color);
+}
+h3{
+    -webkit-text-fill-color: var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
 }
 p{
     color: var(--pera-color);
@@ -69,12 +78,12 @@ img{
     font-weight: 600;
     text-transform: uppercase;
     padding: 2rem 4rem;
-    background-color: var(--linear-logo-color);
+    background: var(--linear-logo-color);
     border-radius: 5rem;
     border: none;
 }
 .secondary-btn{
-    background-color: var(--btn-secondary-color);
+    background: var(--btn-secondary-color);
 }
 title, .logo {
     text-align: center;
@@ -101,7 +110,7 @@ title::first-letter,
 /* === Header Section Css Area Start === */
 header.header-section {
     width: 100%;
-    padding: 3.5rem 0;
+    padding: 3rem 0;
     background: var(--white-color);
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
@@ -145,11 +154,53 @@ header.header-section {
 }
 /* === Header Section Css Area End === */
 
-
-
-
-
-
+/* === Header Section Css Area Start === */
+section.banner-section {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+section.banner-section::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../images/banner-shape.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.banner-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.banner-area .banner-right-img {
+    flex-basis: 48%;
+}
+.banner-area .banner-left-text .banner-img {
+    display: flex;
+    gap: 3.5rem;
+}
+.banner-area ul.game-feature-list {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+.banner-area ul.game-feature-list li {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 500;
+}
+/* === Header Section Css Area End === */
 
 
 
