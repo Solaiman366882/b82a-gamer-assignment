@@ -135,9 +135,36 @@
         justify-content: center;
         gap: 3rem;
     }
+    .play-game-area, .play-instant-area {
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .play-game-area .right-text, .play-instant-area .left-text {
+        flex-basis: 36%;
+        text-align: center;
+    }
+    .play-game-area .right-text{
+        padding-top: 3rem;
+    }
+    .play-game-area .left-img{
+        order: 1;
+    }
 }
 /* === Small Device === */
-@media only screen and (max-width:768px){}
+@media only screen and (max-width:768px){
+    .play-game-area .left-img img.img-1, .play-instant-area .right-img img.img-1 {
+        width: 100%;
+        max-width: 480px;
+    }
+    .play-game-area .left-img img.img-2 {
+        right: -80px;
+        max-width: 190px;
+    }
+    .play-instant-area .right-img img.img-2{
+        left: -80px;
+        max-width: 190px;
+    }
+}
 @media only screen and (max-width:760px){
     h2 {
         font-size: 3.5rem;
@@ -252,8 +279,8 @@
         padding: 0 10px;
     }
     .game-option-section .game-option-area a.game-opt-btn img {
-        width: 2rem;
-        height: 2rem;
+        width: 3rem;
+        height: 3rem;
     }
     .footer-area .footer-info ul,
     .footer-area .footer-menu ul{
@@ -268,6 +295,18 @@
     .footer-area .footer-info ul li a {
         font-size: 1.4rem;
     }
+    .play-game-area .left-img img.img-1, .play-instant-area .right-img img.img-1 {
+        width: 100%;
+        max-width: 330px;
+    }
+    .play-game-area .left-img img.img-2 {
+        right: -45px;
+        max-width: 150px;
+    }
+    .play-instant-area .right-img img.img-2{
+        left: -45px;
+        max-width: 150px;
+    }
 }
 @media only screen and (max-width:380px){
     .career-area .career-left-text ul li {
@@ -275,5 +314,23 @@
     }
     .game-option-section .game-option-area a.game-opt-btn {
         font-size: 1rem;
+    }
+    .career-area .career-left-text ul li {
+        font-size: 1.3rem;
+    }
+    .game-option-section .game-option-area a.game-opt-btn {
+        font-size: 1.4rem;
+    }
+    .play-game-area .left-img img.img-1, .play-instant-area .right-img img.img-1 {
+        width: 100%;
+        max-width: 270px;
+    }
+    .play-game-area .left-img img.img-2 {
+        right: -20px;
+        max-width: 100px;
+    }
+    .play-instant-area .right-img img.img-2{
+        left: -20px;
+        max-width: 100px;
     }
 }
