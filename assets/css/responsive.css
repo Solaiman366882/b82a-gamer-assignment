@@ -25,6 +25,11 @@
     .container{
         max-width: 960px;
     }
+    .funny-area .funny-card p {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+    }
 }
 /* === Medium Device === */
 @media only screen and (max-width:992px){
@@ -71,10 +76,28 @@
         margin-bottom: 2rem;
         gap: 1.2rem;
     }
+    .funny-area {
+        width: 100%;
+        padding-top: 3.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-padding {
+        padding: 8rem 0;
+    }
+    .funny-area .funny-card {
+        flex-basis: 47%;
+    }
 }
 /* === Small Device === */
 @media only screen and (max-width:768px){}
 @media only screen and (max-width:760px){
+    h2 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.6rem;
+    }
     .container{
         max-width: 540px;
     }
@@ -105,16 +128,31 @@
         order: 1;
         position: relative;
         z-index: 1;
-        min-height: 700px;
     }
     section.banner-section::after {
-        width: 42rem;
-        height: 48rem;
+        width: 47rem;
+        height: 47rem;
         left: 50%;
         background-size: contain;
-        bottom: 310px;
+        bottom: -105px;
         transform: translateX(-50%);
         top: unset;
+    }
+    .banner-area {
+        gap: 4.5rem;
+    }
+    .funny-area {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .funny-area .funny-card .card-body img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .funny-area .funny-card {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 /* === Extra Small Device === */
