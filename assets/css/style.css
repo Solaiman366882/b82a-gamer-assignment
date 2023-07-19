@@ -90,17 +90,16 @@ title, .logo {
     font-size: 4.5rem;
     font-weight: 700;
     color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+}
+title, .logo span{
+    color: transparent;
     background: var(--linear-logo-color);
     background-clip: text;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-title::first-letter,
-.logo::first-letter{
-    font-weight: 700;
-    color: transparent;
+title, .logo img{
+    margin-right: 2rem;
 }
 .section-padding{
     padding: 12rem 0;
@@ -393,6 +392,11 @@ section.gamer-section {
     color: #0B0223;
     font-size: 1.6rem;
     font-weight: 600;
+    border: 1px solid transparent;
+}
+.game-option-section .game-option-area a.game-opt-btn:hover{
+    color: #FF42A5;
+    border: 1px solid #FF42A5;
 }
 .game-option-section .game-option-area a.game-opt-btn img{
     width: 5rem;
@@ -400,10 +404,52 @@ section.gamer-section {
 }
 /* === Game Option Section Css Area End === */
 
-
-
-
-
-
-/* === Header Section Css Area Start === */
-/* === Header Section Css Area End === */
+/* === Footer Section Css Area Start === */
+.footer-section {
+    width: 100%;
+    background: var(--secondary-color);
+}
+.footer-area {
+    width: 100%;
+    text-align: center;
+}
+.footer-area .logo{
+    color: var(--white-color);
+}
+.footer-area .footer-menu {
+    width: 100%;
+    margin: 6rem 0;
+}
+.footer-area ul {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+.footer-area .footer-menu ul li a{
+    color: var(--white-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.footer-area .social-icon {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    align-items: center;
+}
+.footer-area .social-icon img{
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+.footer-area .footer-info {
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 2.5rem;
+}
+.footer-area .copyright p,
+.footer-area .footer-info ul li a{
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+/* === Footer Section Css Area End === */

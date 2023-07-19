@@ -130,7 +130,11 @@
     .career-section {
         padding-bottom: 12rem;
     }
-
+    .footer-area ul {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
 }
 /* === Small Device === */
 @media only screen and (max-width:768px){}
@@ -208,6 +212,25 @@
     .game-option-section .game-option-area {
         gap: 0.8rem;
     }
+    .footer-area .social-icon,
+    .footer-area .footer-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-area .footer-menu {
+        margin: 6rem auto;
+        max-width: 375px;
+    }
+    .footer-area .social-icon {
+        max-width: 375px;
+        margin: 0 auto;
+        justify-items: center;
+    }
+    .footer-area .footer-info ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
 
 
 }
@@ -231,6 +254,19 @@
     .game-option-section .game-option-area a.game-opt-btn img {
         width: 2rem;
         height: 2rem;
+    }
+    .footer-area .footer-info ul,
+    .footer-area .footer-menu ul{
+        gap: 2rem;
+    }
+    .footer-area .footer-menu ul li a {
+        font-size: 1.4rem;
+    }
+    .footer-area .footer-info ul {
+        grid-template-columns: repeat(2,auto);
+    }
+    .footer-area .footer-info ul li a {
+        font-size: 1.4rem;
     }
 }
 @media only screen and (max-width:380px){
